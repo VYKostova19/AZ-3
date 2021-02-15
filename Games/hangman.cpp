@@ -51,7 +51,6 @@ int hangman ()
 		wordNow[i] = '*';
 	}
 
-	char wrongLetters[40];
 	int hang = 0; //counts the wrongly guessed letters
 	int option; //the user chooses what to enter
 	bool guess; //checks if the guess is right of wrong
@@ -101,7 +100,7 @@ int hangman ()
 			{
 				for (int i = 0; i < wordLen; i++)
 				{
-					if (wordNow[i] == "*")
+					if (wordNow[i] == '*')
 					{
 						checkStar = true;
 					}

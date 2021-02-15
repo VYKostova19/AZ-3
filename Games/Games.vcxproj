@@ -123,6 +123,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="hangman.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Games.cpp" />
+    <ClCompile Include="hangman.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
