@@ -1,4 +1,6 @@
-# Team AZ-3 <img src="https://cdn.discordapp.com/attachments/776066171785969684/810819111218446336/logo.gif" height="48">
+# Team AZ-3
+
+<img src="https://cdn.discordapp.com/attachments/776066171785969684/810824663256399892/logo_banner.gif" width="550px">
 
 **version 1.0**
 ---
