@@ -18,12 +18,18 @@
     <ClInclude Include="hangman.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="frontEnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Games.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="hangman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontEnd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,4 +1,5 @@
 #include "hangman.h"
+#include "frontEnd.h"
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -114,12 +115,15 @@ int hangman ()
 		{
 			cout << wordNow[i] << " ";
 		}
-		cout << endl;
+		cout << endl << endl;
 
 		if (hang == 9) //if the hanging man is coplete the player loses
 		{
 			//prettyYouLoseText(); //
-			cout << "You lose!" << endl;
+			cout << endl << "You lose!" << endl << endl;
+			system("pause");
+			system("CLS");
+			Menu();
 			return 0;
 		}
 
@@ -129,6 +133,7 @@ int hangman ()
 		{
 			cout << wrongCh[i] << " ";
 		}
+		cout << endl;
 		menu1();
 		
 		// napravi proverka !!!!
@@ -178,12 +183,15 @@ int hangman ()
 
 				if (checkStar == true)
 				{
-					cout << "Correct!" << endl;
+					cout << endl << "Correct!" << endl << endl;
 				}
 				else
 				{
 					//prettyYouWinText(); //
-					cout << "You win!" << endl;
+					cout << endl << "You win!" << endl << endl;
+					system("pause");
+					system("CLS");
+					Menu();
 					return 0;
 				}
 			}
@@ -192,7 +200,7 @@ int hangman ()
 				hang++;
 				wrongCh[countWrongCh] = letterGuess;
 				countWrongCh++;
-				cout << "Nope :(" << endl;
+				cout << endl << "Nope :(" << endl << endl;
 			}
 		}
 
@@ -209,13 +217,16 @@ int hangman ()
 			if (guess == true)
 			{
 				//prettyYouWinText(); //
-				cout << "You win!" << endl;
+				cout << endl << "You win!" << endl << endl;
+				system("pause");
+				system("CLS");
+				Menu();
 				return 0;
 			}
 			else
 			{
 				hang++;
-				cout << "Nope :(" << endl;
+				cout << endl << "Nope :(" << endl;
 			}
 		}
 
@@ -240,13 +251,7 @@ int hangman ()
 			}
 		}
 
-		cout << "Enter 1 to continue" << endl;
-		cin >> clearScr;
-
-		if (clearScr)
-		{
-			system("CLS"); //clear screen
-		}
-
+		system("pause");
+		system("CLS"); //clear screen
 	}
 }
