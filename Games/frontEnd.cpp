@@ -32,6 +32,148 @@ void rules() {
 	cout << "|-----------------------------------------|" << endl;
 }
 
+void hangingMan(int hang)
+{
+	if (hang == 0) {
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+	}
+	else if (hang == 1)
+	{
+		cout << "_" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}//etc.
+	else if (hang == 2)
+	{
+		cout << "__________________" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}
+	else if (hang == 3)
+	{
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}
+	else if (hang == 4)
+	{
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}
+	else if (hang == 5)
+	{
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}
+	else if (hang == 6)
+	{
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|       /|" << endl;
+		cout << "|        |" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}
+	else if (hang == 7)
+	{
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|       /|\\" << endl;
+		cout << "|        |" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}
+	else if (hang == 8)
+	{
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|       /|\\" << endl;
+		cout << "|        |" << endl;
+		cout << "|       /" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}
+	else if (hang == 9)
+	{
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|       /|\\" << endl;
+		cout << "|        |" << endl;
+		cout << "|       / \\" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+	}
+	cout << endl;
+}
+
+void menu1()
+{
+	cout << endl;
+	cout << "1.Guess a letter" << endl;
+	cout << "2.Guess the whole word" << endl;
+	cout << "3.Joker" << endl << endl;
+}
+
 int Menu() {
 	int numberChoice;
 	cout << "|---------------------------|" << endl;
