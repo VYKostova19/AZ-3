@@ -33,7 +33,6 @@ void rules() {
 }
 
 int Menu() {
-	bool clearScreen = false;
 	int numberChoice;
 	cout << "|---------------------------|" << endl;
 	cout << "|   _  _   __  _  _  _  _   |" << endl;
@@ -62,15 +61,9 @@ int Menu() {
 	else if (numberChoice == 4) {
 		system("CLS");
 		rules();
-
-		cout << "Enter 1 to go back to MENU" << endl;
-		cin >> clearScreen;
-
-		if (clearScreen)
-		{
-			system("CLS"); //clear screen
-			Menu();
-		}
+		system("pause");
+		system("CLS"); //clear screen
+		Menu();
 	}
 	else if (numberChoice == 5) {
 		return 0;

@@ -10,46 +10,136 @@ using namespace std;
 
 void hangingMan (int hang)
 {
-	if (hang == 0)
-	{
-		cout << "nishto" << endl;//the hanging man thing is 9 lines in total
+	if (hang == 0) {
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
+		cout << endl;
 	}
 	else if (hang == 1)
 	{
-		cout << "1 greshka" << endl;
+		cout << "_" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
 	}//etc.
 	else if (hang == 2)
 	{
-		cout << "2 greshka" << endl;
+		cout << "__________________" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
 	}
 	else if (hang == 3)
 	{
-		cout << "3 greshka" << endl;
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
 	}
 	else if (hang == 4)
 	{
-		cout << "4 greshka" << endl;
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
 	}
 	else if (hang == 5)
 	{
-		cout << "5 greshka" << endl;
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
 	}
 	else if (hang == 6)
 	{
-		cout << "6 greshka" << endl;
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|       /|" << endl;
+		cout << "|        |" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
 	}
 	else if (hang == 7)
 	{
-		cout << "7 greshka" << endl;
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|       /|\\" << endl;
+		cout << "|        |" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
 	}
 	else if (hang == 8)
 	{
-		cout << "8 greshka" << endl;
+		cout << "__________________" << endl;
+		cout << "|        |" << endl;
+		cout << "|        |" << endl;
+		cout << "|        O" << endl;
+		cout << "|       /|\\" << endl;
+		cout << "|        |" << endl;
+		cout << "|       /" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
+		cout << "|" << endl;
 	}
 	else if (hang == 9)
 	{
-		cout << "9 greshka" << endl;
+	cout << "__________________" << endl;
+	cout << "|        |" << endl;
+	cout << "|        |" << endl;
+	cout << "|        O" << endl;
+	cout << "|       /|\\" << endl;
+	cout << "|        |" << endl;
+	cout << "|       / \\" << endl;
+	cout << "|" << endl;
+	cout << "|" << endl;
+	cout << "|" << endl;
 	}
+	cout << endl;
 }
 
 void prettyYouWinText()
