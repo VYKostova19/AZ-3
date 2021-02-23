@@ -3,5 +3,5 @@
 
 void rules();
 void hangingMan(int hang);
-void menu1();
+void hangmanMenu();
 int Menu();

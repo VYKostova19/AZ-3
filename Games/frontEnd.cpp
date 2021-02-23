@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include "frontEnd.h"
 #include "hangman.h"
+#include "wordFinding.h"
 using namespace std;
 
 void rules() {
@@ -166,7 +167,7 @@ void hangingMan(int hang)
 	cout << endl;
 }
 
-void menu1()
+void hangmanMenu()
 {
 	cout << endl;
 	cout << "1.Guess a letter" << endl;
@@ -193,12 +194,19 @@ int Menu() {
 	if (numberChoice == 1) {
 		system("CLS");
 		hangman();
+		system("pause");
+		system("CLS"); //clear screen
+		Menu();
 	}
 	else if (numberChoice == 2) {
 
 	}
 	else if (numberChoice == 3) {
-
+		system("CLS");
+		wordFinding();
+		system("pause");
+		system("CLS"); //clear screen
+		Menu();
 	}
 	else if (numberChoice == 4) {
 		system("CLS");

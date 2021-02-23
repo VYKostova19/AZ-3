@@ -72,7 +72,7 @@ int hangman ()
 			cout << wrongCh[i] << " ";
 		}
 		cout << endl;
-		menu1();
+		hangmanMenu();
 		
 		// napravi proverka !!!!
 		//while (checkChoice)
