@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 #include <Windows.h>
 #include "frontEnd.h"
 #include "hangman.h"

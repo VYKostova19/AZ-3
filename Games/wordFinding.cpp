@@ -5,8 +5,10 @@
 #include "wordFinding.h"
 #include "frontEnd.h"
 
+using namespace std;
 
 
+//word bank
 std::string words[10] = { "umbrella", "spinach", "knowledge", "conflict", "ancient", "wealthy", "rainbow", "furious", "olive", "resources" };
 char box[10][10];
 
@@ -20,7 +22,9 @@ int wordFinding()
 	{
 		times++;
 
+		//generate a random number
 		srand(time(NULL));
+		//fill box with letters
 		for (int i = 0; i < 10; i++)
 		{
 			for (int j = 0; j < 10; j++)
@@ -32,14 +36,17 @@ int wordFinding()
 			}
 		}
 
+		//choose a random position for the first letter of the word
 		int position = rand() % 10;
 		int row = 0, column = 0;
 
+		//choose word orientation
 		if (words[position].size() % 2 != 0)
 		{
 			row = rand() % 10;
 			column = rand() % 2;
 
+			//print word
 			for (int i = 0; words[position][i] != '\0'; i++)
 			{
 				column++;
@@ -51,6 +58,7 @@ int wordFinding()
 			row = rand() % 2;
 			column = rand() % 10;
 
+			//print word
 			for (int i = 0; words[position][i] != '\0'; i++)
 			{
 				row++;
@@ -58,42 +66,44 @@ int wordFinding()
 			}
 		}
 
+		//print box
 		for (int i = 0; i < 10; i++)
 		{
 			for (int j = 0; j < 10; j++)
 			{
-				std::cout << box[i][j] << " ";
+				cout << box[i][j] << " ";
 			}
-			std::cout << std::endl;
+			cout << endl;
 		}
 
-		std::string guess;
-		std::cout << std::endl;
-		std::cout << "Enter a word of " << words[position].size() << " length: ";
-		std::cin >> guess;
+		string guess;
+		cout << endl;
+		cout << "Enter a word of " << words[position].size() << " length: ";
+		cin >> guess;
 		if (guess == words[position])
 		{
-			std::cout << "Correct!" << std::endl;
+			cout << "Correct!" << endl;
 			win++;
 		}
 		else
 		{
-			std::cout << "Nope :(" << std::endl;
-			std::cout << "The correct word was " << words[position] << std::endl;
+			cout << "Nope :(" << endl;
+			cout << "The correct word was " << words[position] << endl;
 			lose++;
 		}
 
 		system("pause");
-		system("CLS"); //clear screen
+		//clear screen
+		system("CLS"); 
 	}
 
 	if (win >= 2)
 	{
-		std::cout << "You win!" << std::endl;
+		cout << "You win!" << endl;
 	}
 	else
 	{
-		std::cout << "You lose :(" << std::endl;
+		cout << "You lose :(" << endl;
 	}
 
 	return 0;
