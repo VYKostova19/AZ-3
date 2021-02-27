@@ -21,7 +21,7 @@
 - *Email* : [*YVSimeonova19@codingburgas.bg*](mailto:YVSimeonova19@codingburgas.bg)
 
 **Polya Dimitrova Dimitrova - Front-end developer**
-- *Email* : [*PDDimirova19@codingburgas.bg*](mailto:PDDimitrova19@codingburgas.bg)
+- *Email* : [*PDDimitrova19@codingburgas.bg*](mailto:PDDimitrova19@codingburgas.bg)
 
 **Sindy Valentinova Petrova - Code check developer**
 - *Email* : [*SVPetrova19@codingburgas.bg*](mailto:SVPetrova19@codingburgas.bg)
