@@ -3,6 +3,7 @@
 #include "frontEnd.h"
 #include "hangman.h"
 #include "wordFinding.h"
+
 using namespace std;
 
 void rules() {

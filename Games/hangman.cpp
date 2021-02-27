@@ -17,6 +17,7 @@ int hangman ()
 
 	cout << "Enter a word to be guessed: ";
 	cin >> wordToBeGuessed;
+
 	//clear screen
 	system("CLS"); 
 
@@ -61,7 +62,14 @@ int hangman ()
 		if (hang == 9) 
 		{
 			//prettyYouLoseText(); //
-			cout << endl << "You lose! The correct word was " << wordToBeGuessed << "." << endl << endl;
+			system("CLS");
+			cout << "\n|------------------------------------------------|" << endl;
+			cout << "|    _  _   __   _  _     _     __    __    __   |" << endl;
+			cout << "|     \\/   |  |  |  |     |    |  |  |__   |__   |" << endl;
+			cout << "|     /    |__|  |__|     |__  |__|   __|  |__   |" << endl;
+			cout << "|                                                |" << endl;
+			cout << "|------------------------------------------------|\n" << endl;
+			cout << endl << "The correct word was " << wordToBeGuessed << ".\n" << endl << endl;
 			system("pause");
 			system("CLS");
 			Menu();
@@ -100,7 +108,7 @@ int hangman ()
         //if the user chooses to enter a letter
 		if (option == 1) 
 		{
-			cout << "Enter a letter: ";
+			cout << "\nEnter a letter: ";
 			cin >> letterGuess;
 
 			for (size_t i = 0; i < wordLen; i++)
@@ -125,12 +133,18 @@ int hangman ()
 
 				if (checkStar == true)
 				{
-					cout << endl << "Correct!" << endl << endl;
+					cout << endl << "\nCorrect!" << endl << endl;
 				}
 				else
 				{
-					//prettyYouWinText(); //
-					cout << endl << "You win!" << endl << endl;
+					//prettyYouWinText();
+					system("CLS");
+					cout << "\n|----------------------------------------------|" << endl;
+					cout << "|   _  _   __   _  _     _       _  _   _  _   |" << endl;
+					cout << "|    \\/   |  |  |  |      \\  ^  /   |   |\\ |   |" << endl;
+					cout << "|    /    |__|  |__|       \\/ \\/    |   | \\|   |" << endl;
+					cout << "|                                              |" << endl;
+					cout << "|----------------------------------------------|\n" << endl;
 					system("pause");
 					system("CLS");
 					Menu();
@@ -142,13 +156,13 @@ int hangman ()
 				hang++;
 				wrongCh[countWrongCh] = letterGuess;
 				countWrongCh++;
-				cout << endl << "Nope :(" << endl << endl;
+				cout << endl << "\nNope :(" << endl << endl;
 			}
 		}
         //if the user chooses to try to guess the whole word
 		else if (option == 2) 
 		{
-			cout << "Enter a word: ";
+			cout << "\nEnter a word: ";
 			cin >> wordGuess;
 
 			if (wordGuess.compare(wordToBeGuessed) == 0)
@@ -158,8 +172,14 @@ int hangman ()
 
 			if (guess == true)
 			{
-				//prettyYouWinText(); //
-				cout << endl << "You win!" << endl << endl;
+				//prettyYouWinText();
+				system("CLS");
+				cout << "\n|----------------------------------------------|" << endl;
+				cout << "|   _  _   __   _  _     _       _  _   _  _   |" << endl;
+				cout << "|    \\/   |  |  |  |      \\  ^  /   |   |\\ |   |" << endl;
+				cout << "|    /    |__|  |__|       \\/ \\/    |   | \\|   |" << endl;
+				cout << "|                                              |" << endl;
+				cout << "|----------------------------------------------|\n" << endl;
 				system("pause");
 				system("CLS");
 				Menu();
@@ -168,7 +188,7 @@ int hangman ()
 			else
 			{
 				hang++;
-				cout << endl << "Nope :(" << endl;
+				cout << endl << "\nNope :(" << endl << endl;
 			}
 		}
         //joker
@@ -193,6 +213,7 @@ int hangman ()
 			}
 		}
 
+		cout << endl;
 		system("pause");
 		//clear screen
 		system("CLS"); 
