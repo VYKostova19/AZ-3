@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 #include <Windows.h>
 #include "frontEnd.h"
 #include "hangman.h"
@@ -194,21 +193,24 @@ int Menu() {
 		system("CLS");
 		hangman();
 		system("pause");
-		system("CLS"); //clear screen
+		//clear screen
+		system("CLS"); 
 		Menu();
 	}
 	else if (numberChoice == 2) {
 		system("CLS");
 		wordFinding();
 		system("pause");
-		system("CLS"); //clear screen
+		//clear screen
+		system("CLS"); 
 		Menu();
 	}
 	else if (numberChoice == 3) {
 		system("CLS");
 		rules();
 		system("pause");
-		system("CLS"); //clear screen
+		//clear screen
+		system("CLS"); 
 		Menu();
 	}
 	else if (numberChoice == 4) {
