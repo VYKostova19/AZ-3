@@ -183,10 +183,9 @@ int Menu() {
 	cout << "|   |  |  |__  | \\|  |__|   |" << endl;
 	cout << "|                           |" << endl;
 	cout << "|       1. Hangman          |" << endl;
-	cout << "|       2. Crossword        |" << endl;
-	cout << "|       3. Find the words   |" << endl;
-	cout << "|       4. Rules            |" << endl;
-	cout << "|       5. Exit             |" << endl;
+	cout << "|       2. Find the words   |" << endl;
+	cout << "|       3. Rules            |" << endl;
+	cout << "|       4. Exit             |" << endl;
 	cout << "|                           |" << endl;
 	cout << "|---------------------------|" << endl;
 	cout << "\n   Enter choice(number): " ;
@@ -199,23 +198,20 @@ int Menu() {
 		Menu();
 	}
 	else if (numberChoice == 2) {
-
-	}
-	else if (numberChoice == 3) {
 		system("CLS");
 		wordFinding();
 		system("pause");
 		system("CLS"); //clear screen
 		Menu();
 	}
-	else if (numberChoice == 4) {
+	else if (numberChoice == 3) {
 		system("CLS");
 		rules();
 		system("pause");
 		system("CLS"); //clear screen
 		Menu();
 	}
-	else if (numberChoice == 5) {
+	else if (numberChoice == 4) {
 		return 0;
 	}
 }
