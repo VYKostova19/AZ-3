@@ -194,7 +194,8 @@ int Menu() {
 		system("CLS");
 		hangman();
 		system("pause");
-		system("CLS"); //clear screen
+		//clear screen
+		system("CLS"); 
 		Menu();
 	}
 	else if (numberChoice == 2) {
@@ -204,14 +205,16 @@ int Menu() {
 		system("CLS");
 		wordFinding();
 		system("pause");
-		system("CLS"); //clear screen
+		//clear screen
+		system("CLS"); 
 		Menu();
 	}
 	else if (numberChoice == 4) {
 		system("CLS");
 		rules();
 		system("pause");
-		system("CLS"); //clear screen
+		//clear screen
+		system("CLS"); 
 		Menu();
 	}
 	else if (numberChoice == 5) {

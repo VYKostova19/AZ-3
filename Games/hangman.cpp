@@ -17,7 +17,8 @@ int hangman ()
 
 	cout << "Enter a word to be guessed: ";
 	cin >> wordToBeGuessed;
-	system("CLS"); //clear screen
+	//clear screen
+	system("CLS"); 
 
 
 	size_t wordLen = wordToBeGuessed.size();
@@ -35,9 +36,12 @@ int hangman ()
 	//	}
 	//}
 
-	int hang = 0; //counts the wrongly guessed letters
-	int option; //the user chooses what to enter
-	bool guess; //checks if the guess is right of wrong
+	//counts the wrongly guessed letters
+	int hang = 0; 
+	//the user chooses what to enter
+	int option; 
+	//checks if the guess is right of wrong
+	bool guess; 
 	char letterGuess;
 	string wordGuess;
 	bool checkStar = false;
@@ -53,8 +57,8 @@ int hangman ()
 			cout << wordNow[i] << " ";
 		}
 		cout << endl << endl;
-
-		if (hang == 9) //if the hanging man is coplete the player loses
+        //if the hanging man is coplete the player loses
+		if (hang == 9) 
 		{
 			//prettyYouLoseText(); //
 			cout << endl << "You lose! The correct word was " << wordToBeGuessed << "." << endl << endl;
@@ -73,7 +77,7 @@ int hangman ()
 		cout << endl;
 		hangmanMenu();
 		
-		// napravi proverka !!!!
+		// make a check !!!!
 		//while (checkChoice)
 		//{
 			cout << "Enter number: ";
@@ -93,8 +97,8 @@ int hangman ()
 		guess = false;
 		checkStar = false;
 		
-
-		if (option == 1) //if the user chooses to enter a letter
+        //if the user chooses to enter a letter
+		if (option == 1) 
 		{
 			cout << "Enter a letter: ";
 			cin >> letterGuess;
@@ -104,7 +108,8 @@ int hangman ()
 				if (letterGuess == wordToBeGuessed[i])
 				{
 					guess = true;
-					wordNow[i] = letterGuess; //add letter to thing
+					//add letter to thing
+					wordNow[i] = letterGuess; 
 				}
 			}
 
@@ -140,8 +145,8 @@ int hangman ()
 				cout << endl << "Nope :(" << endl << endl;
 			}
 		}
-
-		else if (option == 2) //if the user chooses to try to guess the whole word
+        //if the user chooses to try to guess the whole word
+		else if (option == 2) 
 		{
 			cout << "Enter a word: ";
 			cin >> wordGuess;
@@ -166,8 +171,8 @@ int hangman ()
 				cout << endl << "Nope :(" << endl;
 			}
 		}
-
-		else if (option == 3) //joker
+        //joker
+		else if (option == 3) 
 		{
 			for (size_t i = 0; i < wordLen; i++)
 			{
@@ -189,6 +194,7 @@ int hangman ()
 		}
 
 		system("pause");
-		system("CLS"); //clear screen
+		//clear screen
+		system("CLS"); 
 	}
 }
