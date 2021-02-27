@@ -6,30 +6,35 @@
 using namespace std;
 
 void rules() {
-	cout << "|-----------------------------------------|" << endl;
-	cout << "|         _   _  _  _     __   __         |" << endl;
-	cout << "|        |_)  |  |  |    |__  |__         |" << endl;
-	cout << "|        | \\  |__|  |__  |__   __|        |" << endl;
-	cout << "|                                         |" << endl;
-	cout << "|                                         |" << endl;
-	cout << "|       --Rules for Hangman Game--        |" << endl;
-	cout << "|                                         |" << endl;
-	cout << "|   1. You must choose one person in the  |" << endl;
-	cout << "|   group who will be the host.           |" << endl;
-	cout << "|   2. The host has to think of a secret  |" << endl;
-	cout << "|   word and write it in the console.     |" << endl;
-	cout << "|   3. The players should start guessing  |" << endl;
-	cout << "|   what the word is by choosing to guess |" << endl;
-	cout << "|   the whole word or just a letter that  |" << endl;
-	cout << "|   may be included in it(the word).      |" << endl;
-	cout << "|   4. If the players guess correctly,    |" << endl;
-	cout << "|   the blanks will be filled with the    |" << endl;
-	cout << "|   correct letters.                      |" << endl;
-	cout << "|   5. The players have 8 chances of      |" << endl;
-	cout << "|   guessing and in the 9th incorrect     |" << endl;
-	cout << "|   attempt they lose the game.           |" << endl;
-	cout << "|                                         |" << endl;
-	cout << "|-----------------------------------------|" << endl;
+	cout << "|------------------------------------------------------------------------------------|" << endl;
+	cout << "|                              _   _  _  _     __   __                               |" << endl;
+	cout << "|                             |_)  |  |  |    |__  |__                               |" << endl;
+	cout << "|                             | \\  |__|  |__  |__   __|                              |" << endl;
+	cout << "|                                                                                    |" << endl;
+	cout << "|------------------------------------------------------------------------------------|" << endl;
+	cout << "|                                         ||                                         |" << endl;
+	cout << "|            --Hangman Game--             ||           --Find The Words--            |" << endl;
+	cout << "|                                         ||                                         |" << endl;
+	cout << "|  1. You must choose one person in the   ||  1. In the console will be displayed    |" << endl;
+	cout << "|  group who will be the host.            ||  a matrix filled with letters.          |" << endl;
+	cout << "|                                         ||                                         |" << endl;
+	cout << "|  2. The host has to think of a secret   ||  2. Between these letters there is a    |" << endl;
+	cout << "|  word and write it in the console.      ||  hidden word which you have to find.    |" << endl;
+	cout << "|                                         ||                                         |" << endl;
+	cout << "|  3. The players should start guessing   ||  3. You will be given the length of the |" << endl;
+	cout << "|  what the word is by choosing to guess  ||  hidden word and you will have to write |" << endl;
+	cout << "|  the whole word or just a letter that   ||  in the console the word that you have  |" << endl;
+	cout << "|  may be included in it(the word).       ||  found.                                 |" << endl;
+	cout << "|                                         ||                                         |" << endl;
+	cout << "|  4. If the players guess correctly, the ||  4. The matrix will be displayed three  |" << endl;
+	cout << "|  blanks will be filled with the correct ||  times with different hidden word       |" << endl;
+	cout << "|  letters.                               ||  between different letters.             |" << endl;
+	cout << "|                                         ||                                         |" << endl;
+	cout << "|  5. The players have 8 chances of       ||  5. If the players guess correctly two  |" << endl;
+	cout << "|  guessing and in the 9th incorrect      ||  times they win the game otherwise      |" << endl;
+	cout << "|  attempt they lose the game.            ||  they lose.                             |" << endl;
+	cout << "|                                         ||                                         |" << endl;
+	cout << "|------------------------------------------------------------------------------------|" << endl;
 }
 
 void hangingMan(int hang)
@@ -168,8 +173,7 @@ void hangingMan(int hang)
 
 void hangmanMenu()
 {
-	cout << endl;
-	cout << "1.Guess a letter" << endl;
+	cout << "\n1.Guess a letter" << endl;
 	cout << "2.Guess the whole word" << endl;
 	cout << "3.Joker" << endl << endl;
 }
@@ -192,6 +196,7 @@ int Menu() {
 	if (numberChoice == 1) {
 		system("CLS");
 		hangman();
+		cout << endl;
 		system("pause");
 		system("CLS"); 
 		Menu();
@@ -199,6 +204,7 @@ int Menu() {
 	else if (numberChoice == 2) {
 		system("CLS");
 		wordFinding();
+		cout << endl;
 		system("pause");
 		system("CLS"); 
 		Menu();
@@ -206,6 +212,7 @@ int Menu() {
 	else if (numberChoice == 3) {
 		system("CLS");
 		rules();
+		cout << endl;
 		system("pause");
 		system("CLS"); 
 		Menu();

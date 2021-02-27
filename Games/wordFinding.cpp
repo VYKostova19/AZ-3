@@ -24,6 +24,7 @@ int wordFinding()
 
 		//generate a random number
 		srand(time(NULL));
+
 		//fill box with letters
 		for (int i = 0; i < 10; i++)
 		{
