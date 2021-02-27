@@ -6,26 +6,25 @@
 
 ## Table of contents
 
-+ [Team members] (#teammembers)
-+ [About] (#about)
-+ [Installation] (#installation)
-+ []
++ [Team members](#teammembers)
++ [About](#about)
++ [Installation](#installation)
 
 ## Team members <a name = "teammembers"></a>
-**1. Veleka Yosifova Kostova - Scrum trainer**
-*Email : [VYKostova19@codingburgas.bg]* (mailto:VYKostova19@codingburgas.bg)
+**Veleka Yosifova Kostova - Scrum trainer**
+- *Email* : [*VYKostova19@codingburgas.bg*](mailto:VYKostova19@codingburgas.bg)
 
-**2. Ivelin Georgiev Vasilev - QA engineer**
-*Email : [IGVasilev19@codingburgas.bg]* (mailto:IGValsilev19@codingburgas.bg)
+**Ivelin Georgiev Vasilev - QA engineer**
+- *Email* : [*IGVasilev19@codingburgas.bg*](mailto:IGValsilev19@codingburgas.bg)
 
-**3. Yoanna Vladimirova Simeonova - Back-end developer**
-*Email : [YVSimeonova19@codingburgas.bg]* (mailto:YVSimeonova19@codingburgas.bg)
+**Yoanna Vladimirova Simeonova - Back-end developer**
+- *Email* : [*YVSimeonova19@codingburgas.bg*](mailto:YVSimeonova19@codingburgas.bg)
 
-**4. Polya Dimitrova Dimitrova - Front-end developer**
-*Email : [PDDimirova19@codingburgas.bg]* (mailto:PDDimitrova19@codingburgas.bg)
+**Polya Dimitrova Dimitrova - Front-end developer**
+- *Email* : [*PDDimirova19@codingburgas.bg*](mailto:PDDimitrova19@codingburgas.bg)
 
-**5. Sindy Valentinova Petrova - Code check developer**
-*Email : [SVPetrova19@codingburgas.bg]* (mailto:SVPetrova19@codingburgas.bg)
+**Sindy Valentinova Petrova - Code check developer**
+- *Email* : [*SVPetrova19@codingburgas.bg*](mailto:SVPetrova19@codingburgas.bg)
 
 ## About <a name = "about"></a>
 The project consists of a few simple word games.
