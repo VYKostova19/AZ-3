@@ -193,7 +193,6 @@ int Menu() {
 		system("CLS");
 		hangman();
 		system("pause");
-		//clear screen
 		system("CLS"); 
 		Menu();
 	}
@@ -201,7 +200,6 @@ int Menu() {
 		system("CLS");
 		wordFinding();
 		system("pause");
-		//clear screen
 		system("CLS"); 
 		Menu();
 	}
@@ -209,7 +207,6 @@ int Menu() {
 		system("CLS");
 		rules();
 		system("pause");
-		//clear screen
 		system("CLS"); 
 		Menu();
 	}
