@@ -9,7 +9,7 @@ using namespace std;
 
 
 //word bank
-std::string words[10] = { "umbrella", "spinach", "knowledge", "conflict", "ancient", "wealthy", "rainbow", "furious", "olive", "resources" };
+string words[10] = { "umbrella", "spinach", "knowledge", "conflict", "ancient", "wealthy", "rainbow", "furious", "olive", "resources" };
 char box[10][10];
 
 int wordFinding()

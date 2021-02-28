@@ -6,6 +6,7 @@
 
 using namespace std;
 
+//Rules
 void rules() {
 	cout << "|------------------------------------------------------------------------------------|" << endl;
 	cout << "|                              _   _  _  _     __   __                               |" << endl;
@@ -38,6 +39,7 @@ void rules() {
 	cout << "|------------------------------------------------------------------------------------|" << endl;
 }
 
+//print the HangingMan figure
 void hangingMan(int hang)
 {
 	if (hang == 0) {
@@ -64,7 +66,7 @@ void hangingMan(int hang)
 		cout << "|" << endl;
 		cout << "|" << endl;
 		cout << "|" << endl;
-	}//etc.
+	}
 	else if (hang == 2)
 	{
 		cout << "__________________" << endl;
@@ -172,6 +174,7 @@ void hangingMan(int hang)
 	cout << endl;
 }
 
+//in Game Menu
 void hangmanMenu()
 {
 	cout << "\n1.Guess a letter" << endl;
@@ -179,6 +182,7 @@ void hangmanMenu()
 	cout << "3.Joker" << endl << endl;
 }
 
+//Main Menu
 int Menu() {
 	int numberChoice;
 	cout << "|---------------------------|" << endl;
@@ -194,6 +198,8 @@ int Menu() {
 	cout << "|---------------------------|" << endl;
 	cout << "\n   Enter choice(number): " ;
 	cin >> numberChoice;
+
+	//HangMan
 	if (numberChoice == 1) {
 		system("CLS");
 		hangman();
@@ -202,6 +208,8 @@ int Menu() {
 		system("CLS"); 
 		Menu();
 	}
+
+	//word finding game
 	else if (numberChoice == 2) {
 		system("CLS");
 		wordFinding();
@@ -210,6 +218,8 @@ int Menu() {
 		system("CLS"); 
 		Menu();
 	}
+
+	//rules
 	else if (numberChoice == 3) {
 		system("CLS");
 		rules();
@@ -218,6 +228,8 @@ int Menu() {
 		system("CLS"); 
 		Menu();
 	}
+	
+	//exit
 	else if (numberChoice == 4) {
 		return 0;
 	}

@@ -61,7 +61,7 @@ int hangman ()
 			cout << wordNow[i] << " ";
 		}
 		cout << endl << endl;
-        //if the hanging man is coplete the player loses
+        //if the hanging man is complete the player loses
 		if (hang == 9) 
 		{
 			//prettyYouLoseText(); //
@@ -107,7 +107,7 @@ int hangman ()
 				if (letterGuess == wordToBeGuessed[i])
 				{
 					guess = true;
-					//add letter to thing
+					//add letter to word
 					wordNow[i] = letterGuess; 
 				}
 			}
