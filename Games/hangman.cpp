@@ -88,21 +88,9 @@ int hangman ()
 		cout << endl;
 		hangmanMenu();
 		
-		// make a check !!!!
-		//while (checkChoice)
-		//{
-			cout << "Enter number: ";
-			cin >> option;
+		cout << "Enter number: ";
+		cin >> option;
 
-			//if (option == 1 || option == 2)
-			//{
-			//	checkChoice = false;
-			//}
-			//else
-			//{
-			//	cout << "Invalid number!" << endl;
-			//}
-		//}
 		
 
 		guess = false;

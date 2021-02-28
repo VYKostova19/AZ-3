@@ -27,7 +27,20 @@
 - *Email* : [*SVPetrova19@codingburgas.bg*](mailto:SVPetrova19@codingburgas.bg)
 
 ## About <a name = "about"></a>
-The project consists of a few simple word games.
+The project consists of two word games.
+
+> **Menu**
+<img height = "300px" src = "https://cdn.discordapp.com/attachments/774166732243337238/815676960545308672/unknown.png">
+
+> **Hangman**
+<img height = "300px" src = "https://cdn.discordapp.com/attachments/774166732243337238/815677267895386152/unknown.png">
+
+> **Find the words**
+<img height = "300px" src = "https://cdn.discordapp.com/attachments/774166732243337238/815677579432165376/unknown.png">
+
+> **Rules**
+<img height = "300px" src = "https://cdn.discordapp.com/attachments/774166732243337238/815677715566428180/unknown.png">
+
 
 ## Installation <a name = "installation"></a>
 
