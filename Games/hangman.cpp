@@ -10,10 +10,12 @@ using namespace std;
 int hangman ()
 {
 	string wordToBeGuessed;
-	char wordNow[50];
+	string wordNow[50];
 	char wrongCh[50];
+	string asterisk = "*";
 	int countWrongCh = 0;
 	char jokerLetter;
+	int jokerCount = 0;
 
 	cout << "Enter a word to be guessed: ";
 	cin >> wordToBeGuessed;
@@ -125,7 +127,7 @@ int hangman ()
 			{
 				for (size_t i = 0; i < wordLen; i++)
 				{
-					if (wordNow[i] == '*')
+					if (wordNow[i].compare(asterisk) == 0)
 					{
 						checkStar = true;
 					}
@@ -194,23 +196,33 @@ int hangman ()
         //joker
 		else if (option == 3) 
 		{
-			for (size_t i = 0; i < wordLen; i++)
-			{
-				if (wordNow[i] == '*')
-				{
-					wordNow[i] = wordToBeGuessed[i];
-					jokerLetter = wordToBeGuessed[i];
-					i = 100;
-				}
-			}
+			jokerCount++;
 
-			for (size_t i = 0; i < wordLen; i++)
+			if (jokerCount > (wordLen / 3))
 			{
-				if (wordNow[i] == '*' && wordToBeGuessed[i] == jokerLetter)
+				cout << endl << "You've used all your jokers!" << endl;
+			}
+			else
+			{
+				for (size_t i = 0; i < wordLen; i++)
 				{
-					wordNow[i] = jokerLetter;
+					if (wordNow[i].compare(asterisk) == 0)
+					{
+						wordNow[i] = wordToBeGuessed[i];
+						jokerLetter = wordToBeGuessed[i];
+						break;
+					}
+				}
+
+				for (size_t i = 0; i < wordLen; i++)
+				{
+					if (wordNow[i].compare(asterisk) == 0 && wordToBeGuessed[i] == jokerLetter)
+					{
+						wordNow[i] = jokerLetter;
+					}
 				}
 			}
+			
 		}
 
 		cout << endl;
