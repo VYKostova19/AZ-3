@@ -23,21 +23,22 @@ int hangman ()
 	//clear screen
 	system("CLS"); 
 
-
 	size_t wordLen = wordToBeGuessed.size();
 	for (size_t i = 0; i < wordLen; i++)
 	{
 		wordNow[i] = '*';
 	}
 
-	wordNow[0] = wordToBeGuessed[0];
-	//for (size_t i = 0; i < wordLen; i++)
-	//{
-	//	if (wordNow[i] == wordToBeGuessed[0])
-	//	{
-	//		wordNow[i] = wordToBeGuessed[0];
-	//	}
-	//}
+	char firstLetter = wordToBeGuessed[0];
+	
+	//make the first letter appear everywhere
+	for (size_t i = 0; i < wordLen; i++)
+	{
+		if (wordToBeGuessed[i] == firstLetter)
+		{
+			wordNow[i] = wordToBeGuessed[0];
+		}
+	}
 
 	//counts the wrongly guessed letters
 	int hang = 0; 
