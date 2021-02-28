@@ -66,12 +66,7 @@ int hangman ()
 		{
 			//prettyYouLoseText(); //
 			system("CLS");
-			cout << "\n|------------------------------------------------|" << endl;
-			cout << "|    _  _   __   _  _     _     __    __    __   |" << endl;
-			cout << "|     \\/   |  |  |  |     |    |  |  |__   |__   |" << endl;
-			cout << "|     /    |__|  |__|     |__  |__|   __|  |__   |" << endl;
-			cout << "|                                                |" << endl;
-			cout << "|------------------------------------------------|\n" << endl;
+			youLose();
 			cout << endl << "The correct word was " << wordToBeGuessed << ".\n" << endl << endl;
 			system("pause");
 			system("CLS");
@@ -130,12 +125,7 @@ int hangman ()
 				{
 					//prettyYouWinText();
 					system("CLS");
-					cout << "\n|----------------------------------------------|" << endl;
-					cout << "|   _  _   __   _  _     _       _  _   _  _   |" << endl;
-					cout << "|    \\/   |  |  |  |      \\  ^  /   |   |\\ |   |" << endl;
-					cout << "|    /    |__|  |__|       \\/ \\/    |   | \\|   |" << endl;
-					cout << "|                                              |" << endl;
-					cout << "|----------------------------------------------|\n" << endl;
+					youWin();
 					system("pause");
 					system("CLS");
 					Menu();
@@ -165,12 +155,7 @@ int hangman ()
 			{
 				//prettyYouWinText();
 				system("CLS");
-				cout << "\n|----------------------------------------------|" << endl;
-				cout << "|   _  _   __   _  _     _       _  _   _  _   |" << endl;
-				cout << "|    \\/   |  |  |  |      \\  ^  /   |   |\\ |   |" << endl;
-				cout << "|    /    |__|  |__|       \\/ \\/    |   | \\|   |" << endl;
-				cout << "|                                              |" << endl;
-				cout << "|----------------------------------------------|\n" << endl;
+				youWin();
 				system("pause");
 				system("CLS");
 				Menu();

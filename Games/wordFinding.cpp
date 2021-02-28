@@ -100,11 +100,11 @@ int wordFinding()
 
 	if (win >= 2)
 	{
-		cout << "You win!" << endl;
+		youWin();
 	}
 	else
 	{
-		cout << "You lose :(" << endl;
+		youLose();
 	}
 
 	return 0;
