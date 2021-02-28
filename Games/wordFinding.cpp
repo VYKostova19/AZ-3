@@ -83,13 +83,13 @@ int wordFinding()
 		cin >> guess;
 		if (guess == words[position])
 		{
-			cout << "Correct!" << endl;
+			cout << "\nCorrect!\n" << endl;
 			win++;
 		}
 		else
 		{
-			cout << "Nope :(" << endl;
-			cout << "The correct word was " << words[position] << endl;
+			cout << "\nNope :(" << endl;
+			cout << "\nThe correct word was " << words[position] << endl <<endl;
 			lose++;
 		}
 
